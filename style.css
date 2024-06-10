@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-um: #313b48ff;
+    --cor-dois: #e5e6e8ff;
+    --cor-tres: #020f1fff;
+    --cor-quatro: #00bec0ff;
+    --texto-corpo: "Quicksand", sans-serif;
+    --texto-titulo: "Josefin Sans", sans-serif;
+}
+
+body{
+    background-color: var(--cor-tres);
+    color: var(--cor-quatro);
+    font-family: var(--texto-corpo);
+}
+.cabecalho{
+    background-color: var(--cor-quatro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.cabecalho-img{
+    width: 7%;
+    border-radius: 100%;
+}
+
+.cabecalho-nav__link{
+    text-decoration: none;
+    font-family: var(--texto-titulo);
+    font-size: 24px;
+    color: var(--cor-um);
+    margin-right: 24px;
+}
+
+.principal-capa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    margin-left: 12px;
+    padding: 24px 12px;
+}
+
+.principal-capa__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.principal-capa__titulo{
+    font-family: var(--texto-titulo);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--cor-dois);
+    margin-bottom: 12px;
+}
+
+.principal-capa__texto{
+    font-size: 24px;
+    margin-top: 24px;
+    color: var(--cor-dois);
+}
+
+.principal-capa__imagem{
+    border-radius: 0 5% 0 5%;
+}
